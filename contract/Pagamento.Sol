@@ -1,0 +1,22 @@
+pragma solidity ^0.8.0;
+
+contract Pagamento {
+    // Estrutura para representar um pagamento
+    struct PagamentoInfo {
+        address locatario;
+        address propriedade;
+        uint256 valorPagamento;
+        uint256 dataPagamento;
+    }
+
+    // Mapeamento de pagamentos
+    mapping(address => PagamentoInfo) public pagamentos;
+
+    // Eventos
+    event PagamentoRealizado(address locatario);
+
+    // Função para realizar pagamento
+    function realizarPagamento(address _propriedade, uint256 _valorPagamento) public payable {
+        // Implementação...
+    }
+}

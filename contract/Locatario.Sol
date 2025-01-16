@@ -1,0 +1,27 @@
+pragma solidity ^0.8.0;
+
+contract Locatario {
+    // Estrutura para representar um locatário
+    struct LocatarioInfo {
+        string nome;
+        string cpf;
+        address propriedadeAlugada;
+    }
+
+    // Mapeamento de locatários
+    mapping(address => LocatarioInfo) public locatarios;
+
+    // Eventos
+    event LocatarioCadastrado(address locatario);
+    event PropriedadeAlugada(address locatario);
+
+    // Função para cadastrar locatário
+    function cadastrarLocatario(string memory _nome, string memory _cpf) public {
+        // Implementação...
+    }
+
+    // Função para alugar propriedade
+    function alugarPropriedade(address _propriedade) public {
+        // Implementação...
+    }
+}

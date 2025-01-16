@@ -1,0 +1,28 @@
+pragma solidity ^0.8.0;
+
+contract Propriedade {
+    // Estrutura para representar uma propriedade
+    struct PropriedadeInfo {
+        address locador;
+        string endereco;
+        uint256 valorAluguel;
+        bool estaAlugada;
+    }
+
+    // Mapeamento de propriedades
+    mapping(address => PropriedadeInfo) public propriedades;
+
+    // Eventos
+    event PropriedadeCadastrada(address propriedade);
+    event PropriedadeAlugada(address propriedade);
+
+    // Função para cadastrar propriedade
+    function cadastrarPropriedade(string memory _endereco, uint256 _valorAluguel) public {
+        // Implementação...
+    }
+
+    // Função para alugar propriedade
+    function alugarPropriedade(address _propriedade) public {
+        // Implementação...
+    }
+}

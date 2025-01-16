@@ -1,0 +1,22 @@
+    pragma solidity ^0.8.0;
+
+contract RenovacaoContrato {
+    // Estrutura para representar um contrato
+    struct ContratoInfo {
+        address locatario;
+        address propriedade;
+        uint256 dataVencimento;
+        bool estaRenovado;
+    }
+
+    // Mapeamento de contratos
+    mapping(address => ContratoInfo) public contratos;
+
+    // Eventos
+    event ContratoRenovado(address locatario);
+
+    // Função para renovar contrato
+    function renovarContrato(address _propriedade) public {
+        // Implementação...
+    }
+}
