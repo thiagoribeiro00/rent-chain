@@ -1,4 +1,7 @@
 Plataforma de Aluguel Descentralizada
+
+
+
 ![Descrição da Imagem](./assets/rentchain-fluxograma.png)
 
 Este projeto visa criar uma plataforma de aluguel descentralizada, utilizando blockchain para garantir transparência e segurança nas transações. A plataforma permite que locadores cadastrem suas propriedades e locatários as reservem e paguem em criptomoedas.
